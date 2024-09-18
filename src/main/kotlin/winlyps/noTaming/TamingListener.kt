@@ -12,6 +12,5 @@ class TamingListener(private val plugin: Plugin) : Listener {
     fun onEntityTame(event: EntityTameEvent) {
         // Cancel the taming event
         event.isCancelled = true
-        plugin.logger.info("Taming attempt was prevented.")
     }
 }
